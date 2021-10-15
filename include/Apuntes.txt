@@ -1,0 +1,97 @@
+
+        // crea hilos varios
+        /*void cicloPrincipal(){
+               
+                (principal) // Hilo Interface y LOGGER (TERMINAL) SOLO MANEJA LA ENTRADA (HILO PADRE), imprima fails
+                // list 
+                // stats
+                // set 0, 1, 2, 3
+                // set 
+                // mata el programa
+                // [DOM 8:23PM 1/21/2009] [CONECCTION] [ip]
+                // [DOM 8:23PM 1/21/2009] [TIME_OUT] [ip]
+                // printf
+                // vacia esa cola e imprime en un while
+                Control+C
+
+                (manual) // Hilo escuchador en servidor/balanceador (datagrama) 9786
+                // escucha el puerto 9786 (abrir este puerto como broadcast)
+                
+                // hasta que este hilo reciba algo, no sabe que le va llegar
+                 while(ejecutanse)
+                ret = recvfrom() <- pega este hilo
+
+                (auto) Hilo splitear, interprete {
+                    // cuidado con auto agregarse a si mismo
+                    // si no soy yo, revise que mi hilera no esta hash
+                    // si NO estoy, agregueme como existente en la tabla hash
+                    // SPLITEE EL MENSAJE
+                    // extraiga sus cosas
+                    if char[0] = S or es B
+                    S/C/   IP/PORT/20   <- carga maxima
+                    B/C/   IP/PORT/XX   <- que tan cargado estoy yo
+
+                    S/D/   IP/PORT // borrelo de la hash
+                }
+
+                // Hilo escuchar de clientes               (conexiones) 80
+                 // hasta que este hilo reciba algo, no sabe que le va llegar
+                while(ejecutanse)
+
+                
+                ret = accept() <- pega este hilo TCP
+
+                carga++
+
+                if (carga es muy alta){
+                    NO CREA HILOS NUEVOS
+                    send(REQUEST al balanceador siguiente);
+                }
+
+
+                (auto) Hilo solicitud {
+                    ret  // GET / HTTP/1.1
+                    // caso especial, GET /_history
+                    // A CUAL SERVIDOR MANDARSELO?
+                    // switch(metodoAtender){
+                        // heuristica logica
+
+                               si usamos robin con limite de carga if(carga > max_lod){
+                                    //NO USE ESTE
+                                }
+
+                    }
+                    // que pasa si le mando a un server MUERTO?
+                    // SEND GET / HTTP/1.1 a ESE servidor (carga de este servidor ++)
+
+                    // READ / RECV <- se va quedar pegar
+                    // SO_RCVTIMEO
+
+                    else{
+                        // sorry cliente, pero el servidor parece estar muerto
+                        enviar eso al CLIENTE
+
+                        log(ERERERE, "no se pudo enviar")
+                    }
+
+                    // este mae se queda ESPERANDO LA RESPUESTA
+                    // se la reenvia a ret
+                    // ret es el socket directo al cliente
+                    // muere
+                    carga--;
+
+                    0, 1 ?
+
+                    estadistas++
+
+                }
+                
+        }*/
+
+        // string AgregarServidor(ipadress, port);
+        // esto envia B/C/IP/PORT a la ip address, y espera respuesta de esa misma IP
+        // el server le responde 
+        //      opcion 1: S               , ya que es un socket individual (no hace falta espeficar)
+        //      opcion 2: S/C/IP/PORT     , socket asociado a una ip de brodcast
+        //                                  todos oyen el mensaje, entonces hay que especificar
+        // 
